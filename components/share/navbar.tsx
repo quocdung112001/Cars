@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { CustomButton } from "../ui";
-import { nav_items } from "@/app/constants";
+import { nav_items } from "@/constants";
 
 function Navbar() {
   return (
-    <header className="w-full absolute  z-10">
+    <header className="fixed w-full  z-40 bg-white shadow-md">
       <nav className="flex justify-between items-center max-w-[1440px] mx-auto sm:px-16 px-6 py-4">
         <div className="flex  items-center gap-3">
           <Link href={"#"}>
