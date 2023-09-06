@@ -29,11 +29,13 @@ function Navbar() {
             })}
           </div>
         </div>
-        <CustomButton
-          title="Log in"
-          containerStyles="custom_btn"
-          textStyles="text-white font-bold"
-        />
+        <Link href={"/login"}>
+          <CustomButton
+            title="Log in"
+            containerStyles="custom_btn"
+            textStyles="text-white font-bold"
+          />
+        </Link>
       </nav>
     </header>
   );
