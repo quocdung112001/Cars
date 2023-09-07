@@ -4,11 +4,7 @@ export const nav_items = [
     link: "#",
   },
   {
-    name: "Cars",
-    link: "#",
-  },
-  {
-    name: "Manufacturer",
+    name: "Shop",
     link: "#",
   },
 ];

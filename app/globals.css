@@ -12,6 +12,14 @@
 }
 
 /* START: General styles */
+.input-border--none {
+  @apply border-transparent focus:border-transparent focus:ring-0;
+}
+
+.label-form {
+  @apply text-[14px] text-gray-500 font-semibold mb-2;
+}
+
 .max-width {
   @apply max-w-[1440px] mx-auto;
 }

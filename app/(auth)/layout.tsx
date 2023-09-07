@@ -14,7 +14,9 @@ export default function AuthLayout({
   return (
     <html lang="en">
       <body className="w-full h-screen max-h-screen overflow-hidden flex-center relative">
-        <div className="-translate-y-4">{children}</div>
+        <div className="-translate-y-4 max-md:px-12 px-6 max-md:w-full max-md:max-w-[450px] relative">
+          {children}
+        </div>
       </body>
     </html>
   );

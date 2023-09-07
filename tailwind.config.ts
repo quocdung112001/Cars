@@ -8,6 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        fluctuate: "fluctuate 3s ease-in-out infinite",
+      },
+      keyframes: {
+        fluctuate: {
+          "0% , 100%": {
+            transform: "translateX(0) scale(1)",
+          },
+          "50%": {
+            transform: "translateX(-42px) scale(1.1)",
+          },
+        },
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -15,9 +28,10 @@ const config: Config = {
         pattern: "url('/pattern.png')",
         "hero-bg": "url('/hero-bg.png')",
         "auth-bg": "url('/pattern.png')",
+        "on-sale--bg": "url('/about1.webp')",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 };
 export default config;
